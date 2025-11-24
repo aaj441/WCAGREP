@@ -1,0 +1,76 @@
+Here’s an **agentic, keyword-focused workflow** for your platform, designed for automation and minimal user friction (with each step as a “task” to chain or trigger):
+
+***
+
+**Agentic Workflow (Keywords First):**
+
+1. **Platform Entry (User or Agent):**  
+   Open homepage → Prompt clearly for `Keyword Discovery` (primary action).
+
+2. **Keyword Discovery Task:**  
+   - Agent prompts: “Enter keywords to find companies/prospects.”
+   - User/agent inputs keywords (e.g., “SaaS startups,” “nonprofits,” etc.).
+   - Agent launches auto-search using those keywords (with a scalable API/search strategy).
+
+3. **Prospect Identification:**  
+   - Agent compiles a list of companies/websites based on results.
+   - Agent auto-calculates ICP (Ideal Customer Profile) scores for ranking relevance.
+
+4. **Selection & Audit Trigger:**  
+   - Agent displays prospects ranked by ICP.
+   - Each prospect has a “Scan Now” button.
+   - User or agent triggers audit for any or all prospects (could be batched or user-selected).
+
+5. **Automated WCAG Audit:**  
+   - Agent runs accessibility audit workflow in the background.
+   - For each site:  
+     - Generate before/after mockups.
+     - Summarize major non-compliance points.
+     - Score and categorize issues automatically.
+
+6. **Automated Output Generation:**  
+   - Agent bundles a report:  
+     - PDF summary of results.  
+     - HTML/CSS code packages for fixes.
+   - Agent serves download links or auto-sends these bundles via webhook/email/API.
+
+7. **Alternative Path:**  
+   For users with a specific site:  
+   - “Quick Win Audit by URL” secondary flow (less prominent), same audit automation as above but with manual URL input.
+
+8. **Agentic Loops:**  
+   - Every stage can have triggers for follow-up actions:
+     - Re-run audit on regular intervals.
+     - Launch outreach campaigns to discovered prospects.
+     - Auto-enrich results with additional third-party data.
+   - All steps expose hooks for further LLM/agent orchestration.
+
+***
+
+**Key Design Principles:**  
+- **Keyword Discovery = primary action**
+- **Background processing & auto-triggering** as much as possible
+- **Every step exposes an API/action endpoint** (enabling agent chaining)
+- **Minimal manual input:** Only at keyword entry or (optionally) URL entry
+
+***
+
+**Summary Table**
+
+| Step                    | Agentic Action                                                         |
+|-------------------------|-----------------------------------------------------------------------|
+| Homepage Load           | Prompt for keyword input                                              |
+| Keyword Entry           | Auto-lookup prospects, score ICP                                      |
+| Prospect List           | Present “Scan Now” for each; allow agent-initiated bulk scan          |
+| Run Audit               | Agent performs tests, generates reports+fixes automatically           |
+| Output                  | Auto-generate downloads, send via webhook or API as needed            |
+| Quick Win (Alt. path)   | Manual URL audit, same automated report gen                           |
+
+***
+
+**Agentic Focus:**  
+Every task can be triggered by an **agent or workflow script**, not just the end user. The platform is fully “agent-ready” for chaining, automation, and hands-off operation.
+
+Let me know if you want this as a diagram or want hooks/API endpoint examples for further automation!
+
+[1](https://replit.com/@aaj441/WCAGAIPlatform)
